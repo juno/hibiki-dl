@@ -13,7 +13,7 @@ $ brew install ffmpeg --with-openssl
 
 ```console
 $ bundle install --path .bundle
-$ bundle exec hibiki.rb <access_id> [output_dir]
+$ bundle exec ruby hibiki.rb <access_id> [output_dir]
 ```
 
 Output filename is like a "imas_cg.mp4".
@@ -21,6 +21,6 @@ Output filename is like a "imas_cg.mp4".
 ## Example
 
 ```console
-$ bundle exec hibiki.rb imas_cg .
+$ bundle exec ruby hibiki.rb imas_cg .
 ```
 

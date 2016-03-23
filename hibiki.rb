@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'english'
 require 'shellwords'
 require 'logger'

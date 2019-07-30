@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'english'
+require 'json'
 require 'shellwords'
 require 'logger'
 require 'mechanize'

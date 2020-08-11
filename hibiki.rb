@@ -41,7 +41,9 @@ class Hibiki
   #
   # Returns Hash.
   def get_infos(access_id)
+    @logger.info { "get_info: access_id=#{access_id}" }
     res = get_api("https://vcms-api.hibiki-radio.jp/api/v1/programs/#{access_id}")
+    @logger.info { "get_info: res.code=#{res.code}" }
     JSON.parse(res.body)
   end
 
@@ -49,12 +51,15 @@ class Hibiki
   #
   # Returns URL String.
   def get_m3u8_url(video_id)
+    @logger.info { "get_m3u8_url: video_id=#{video_id}" }
     res = get_api("https://vcms-api.hibiki-radio.jp/api/v1/videos/play_check?video_id=#{video_id}")
+    @logger.info { "get_m3u8_url: res.code=#{res.code}" }
     play_infos = JSON.parse(res.body)
     play_infos['playlist_url']
   end
 
   def download_hls(access_id, m3u8_url)
+    @logger.info { "download_hls: access_id=#{access_id} m3u8_url=#{m3u8_url}" }
     file_path = "#{access_id}.mp4"
     arg = "\
       -loglevel error \

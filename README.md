@@ -3,7 +3,7 @@
 ## Prerequisits
 
 * ffmpeg
-* ruby 2.7.5
+* ruby 3.1.0
 
 ```console
 $ brew install ffmpeg

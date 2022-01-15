@@ -2,17 +2,17 @@
 
 ## Prerequisits
 
-* ffmpeg (Install via Homebrew)
-* ruby 2.3.0
+* ffmpeg
+* ruby 3.1.0
 
 ```console
-$ brew install ffmpeg --with-openssl
+$ brew install ffmpeg
 ```
 
 ## Usage
 
 ```console
-$ bundle install --path .bundle
+$ bundle install
 $ bundle exec ruby hibiki.rb <access_id> [output_dir]
 ```
 

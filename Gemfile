@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '3.4.2'
+ruby file: ".tool-versions"
 
 gem 'mechanize'

@@ -16,7 +16,7 @@ $ bundle install
 $ bundle exec ruby hibiki.rb <access_id> [output_dir]
 ```
 
-Output filename is like a "imas_cg.mp4".
+Output file will saved as a `<access_id>.mp4`.
 
 ## Example
 
